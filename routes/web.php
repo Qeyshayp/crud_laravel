@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/barang', [BarangController::class, 'index'])->name('barang');
+Route::get('/barang', [BarangController::class, 'index']);
 
 Auth::routes();
 

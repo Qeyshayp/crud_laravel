@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 
 class BarangController extends Controller
 {
-    public function index() //ini namanya methode
+    public function index()
     {
-        $barangs = barang::all();
+        $barangs = \App\Models\Barang::all();
         return view('barang', compact('barangs'));
     }
+    
     public function edit()
     {
         return view('barang.edit');
