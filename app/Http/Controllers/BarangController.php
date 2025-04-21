@@ -9,13 +9,15 @@ class BarangController extends Controller
 {
     public function index()
     {
-        $barangs = \App\Models\Barang::all();
+        $barangs = \App\Models\Barang::paginate(10);
         return view('barang', compact('barangs'));
     }
     
-    public function edit()
-    {
-        return view('barang.edit');
-    }
+    public function edit($id) //nambahin ini
+{
+    $barang = Barang::findOrFail($id);
+    return view('barang.edit', compact('barang'));
+}
+
 
 }

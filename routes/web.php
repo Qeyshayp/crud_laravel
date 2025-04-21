@@ -7,6 +7,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('barang', BarangController::class); //nambahin ini
+
 Route::get('/barang', [BarangController::class, 'index']);
 
 Auth::routes();
