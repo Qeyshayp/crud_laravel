@@ -62,6 +62,18 @@ class BarangSeeder extends Seeder
                 'harga' => 2300000.00,
                 'stok' => 200,
             ],
+            [
+                'kode' => 'B009',
+                'nama' => 'Laptop',
+                'harga' => 6000000.00,
+                'stok' => 200,
+            ],
+            [
+                'kode' => 'B010',
+                'nama' => 'CPU',
+                'harga' => 200000.00,
+                'stok' => 200,
+            ],
         ]);
     }
 }

@@ -11,7 +11,7 @@
             background-color: #f8f9fa;
         }
         .table th {
-            background-color: #272f3b;
+            background-color: #0d6efd;
             color: white;
         }
         .btn-custom {
@@ -23,7 +23,7 @@
 
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="fw-bold">Data Barang</h2>
+        <h2 class="text-primary" class="fw-bold">📦 Data Barang</h2>
         <a href="{{ route('barang.create') }}" class="btn btn-success btn-custom">+ Tambah Barang</a>
     </div>
 
@@ -56,12 +56,12 @@
                             <td>{{ 'Rp ' . number_format($barang->harga, 2, ',', '.') }}</td>
                             <td class="text-center">{{ $barang->stok }}</td>
                             <td class="text-center">
-                                <a href="{{ route('barang.edit', $barang->id) }}" class="btn btn-warning btn-sm btn-custom me-1">Edit</a>
+                                <a href="{{ route('barang.edit', $barang->id) }}" class="btn btn-warning btn-sm btn-custom me-1">✏️ Edit</a>
                                 
                                 <form action="{{ route('barang.destroy', $barang->id) }}" method="POST" class="d-inline" onsubmit="return confirmDelete(event)">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger btn-sm btn-custom">Hapus</button>
+                                    <button type="submit" class="btn btn-danger btn-sm btn-custom">🗑️ Hapus</button>
                                 </form>
                             </td>
                         </tr>
