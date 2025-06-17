@@ -46,7 +46,7 @@ class BarangSeeder extends Seeder
             ],
             [
                 'kode' => 'B006',
-                'nama' => 'Radio',
+                'nama' => 'DVD',
                 'harga' => 270000.00,
                 'stok' => 5,
             ],
@@ -60,19 +60,49 @@ class BarangSeeder extends Seeder
                 'kode' => 'B008',
                 'nama' => 'Microwave',
                 'harga' => 2300000.00,
-                'stok' => 200,
+                'stok' => 100,
             ],
             [
                 'kode' => 'B009',
                 'nama' => 'Laptop',
                 'harga' => 6000000.00,
-                'stok' => 200,
+                'stok' => 50,
             ],
             [
                 'kode' => 'B010',
                 'nama' => 'CPU',
                 'harga' => 200000.00,
-                'stok' => 200,
+                'stok' => 100,
+            ],
+            [
+                'kode' => 'B011',
+                'nama' => 'Keyboard',
+                'harga' => 99000.00,
+                'stok' => 30,
+            ],
+            [
+                'kode' => 'B012',
+                'nama' => 'Hairdayer',
+                'harga' => 350000.00,
+                'stok' => 50,
+            ],
+            [
+                'kode' => 'B013',
+                'nama' => 'Motor Listrik',
+                'harga' => 2000000.00,
+                'stok' => 5,
+            ],
+            [
+                'kode' => 'B014',
+                'nama' => 'PS 5',
+                'harga' => 5000000.00,
+                'stok' => 3,
+            ],
+            [
+                'kode' => 'B015',
+                'nama' => 'Joy Stik',
+                'harga' => 70000.00,
+                'stok' => 20,
             ],
         ]);
     }

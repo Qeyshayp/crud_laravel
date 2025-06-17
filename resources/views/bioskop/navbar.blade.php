@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bioskop Kita</title>
+    <title>Qeys Cinema</title>
     <style>
         body {
             font-family: 'Georgia', serif;
